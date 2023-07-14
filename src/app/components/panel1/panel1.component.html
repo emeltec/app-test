@@ -1,0 +1,48 @@
+<div class="sidebar-builder">
+  <div class="loopple-col-12">
+    <h3 class="loopple-text loopple-h6 loopple-font-weight-500 mt-2 mb-1">Grid with 1 column</h3>
+    <div class="draggable drag-start loopple-bg-white loopple-mx-0 mb-2 row-1-col" draggable="true">
+      <div class="image-container">
+        <img class="loopple-w-100" src="assets/img/grid-1-col.png">
+      </div>
+    </div>
+    <h3 class="loopple-text loopple-h6 loopple-font-weight-500 mt-2 mb-1">Grid with 2 columns</h3>
+    <div class="draggable drag-start loopple-bg-white loopple-mx-0 mb-2 row-2-cols" draggable="true">
+      <div class="image-container">
+        <img class="loopple-w-100" src="assets/img/grid-2-cols.png">
+      </div>
+    </div>
+    <h3 class="loopple-text loopple-h6 loopple-font-weight-500 mt-2 mb-1">Grid with 3 columns</h3>
+    <div class="draggable drag-start loopple-bg-white loopple-mx-0 mb-2 row-3-cols" draggable="true">
+      <div class="image-container">
+        <img class="loopple-w-100" src="assets/img/grid-3-cols.png">
+      </div>
+    </div>
+    <h3 class="loopple-text loopple-h6 loopple-font-weight-500 mt-2 mb-1">Grid with 4 columns</h3>
+    <div class="draggable drag-start loopple-bg-white loopple-mx-0 mb-2 row-4-cols" draggable="true">
+      <div class="image-container">
+        <img class="loopple-w-100" src="assets/img/grid-4-cols.png">
+      </div>
+    </div>
+    <h3 class="loopple-text loopple-h6 loopple-font-weight-500 mt-2 mb-1">Grid with 4-8 columns</h3>
+    <div class="draggable drag-start loopple-bg-white loopple-mx-0 mb-2 row-col-4-col-8" draggable="true">
+      <div class="image-container">
+        <img class="loopple-w-100" src="assets/img/grid-4-8-cols.png">
+      </div>
+    </div>
+    <h3 class="loopple-text loopple-h6 loopple-font-weight-500 mt-2 mb-1">Grid with 8-4 columns</h3>
+    <div class="draggable drag-start loopple-bg-white loopple-mx-0 mb-2 row-col-8-col-4" draggable="true">
+      <div class="image-container">
+        <img class="loopple-w-100" src="assets/img/grid-8-4-cols.png">
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="loopple-main-panel">
+  <div class="builder-container position-relative show-grid">
+    <div class="container-fluid pt-3 drop-zone" (dragenter)="onDragEnter($event)" (drop)="onDrop($event)">
+
+    </div>
+  </div>
+</div>

@@ -1,1 +1,86 @@
-/* You can add global styles to this file, and also import other style files */
+html,
+body {
+    font-family: sans-serif;
+    padding: 0;
+    margin: 0;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+
+.sidebar-builder {
+    background-color: #fff;
+    position: absolute;
+    right: 0;
+    border-left: 1px solid #ddd;
+    height: 100%;
+    width: 250px;
+    overflow: hidden;
+}
+
+.loopple-main-panel {
+    width: calc(100% - 250px);
+}
+
+.builder-container {
+    border: 1px solid #ddd;
+    margin: 0 10px 10px;
+    height: 90vh;
+    position: relative;
+    overflow: scroll;
+    background: #f8f9fe;
+}
+
+.position-relative {
+    position: relative !important;
+}
+
+
+
+.grid1 {
+    background: rgb(183, 183, 255);
+}
+
+
+
+.board {
+    width: calc(100% - 250px);
+    background: #f8f9fe;
+    padding: 10px;
+    height: 100vh;
+}
+
+.tools {
+    width: 250px;
+    background: #fff;
+    padding: 10px;
+    position: absolute;
+    right: 0;
+    top: 0;
+    height: 100vh;
+}
+
+.draggable {
+    margin: 16px;
+    padding: 16px;
+    box-shadow: 0 0 3px 2px rgba(22, 22, 22, 0.3);
+    border-radius: 5px;
+}
+
+.draggable.dndDraggingSource {
+    /* display:none; */
+    opacity: 0.5;
+}
+
+.dropzone {
+    margin: 16px;
+    padding: 16px;
+    border: 1px rgb(56, 85, 249) solid;
+    border-radius: 3px;
+}
+
+.dropzone.dndDragover {
+    border-color: green;
+}

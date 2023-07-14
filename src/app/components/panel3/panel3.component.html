@@ -1,0 +1,17 @@
+<div class="tools">
+  <div class="itols" draggable="true" [dndDraggable]="x" dndEffectAllowed="copy" *ngFor="let x of tools">{{x.cols}} columns</div>
+  <div *ngFor='let item of listItems'>
+    <div class="draggable" [dndDraggable]="item" dndEffectAllowed="copy">
+      {{ item.name }}
+    </div>
+  </div>
+</div>
+
+<div class="board">
+  <app-drop-area></app-drop-area>
+
+
+  
+
+
+</div>

@@ -1,0 +1,41 @@
+<div class="container">
+  <div class="row">
+
+    <div class="col-md-4">
+      <div class="drag-container">
+        <div class="section-heading">Seccion 1</div>
+        <div cdkDropList #pendingList="cdkDropList" [cdkDropListData]="todo"
+          [cdkDropListConnectedTo]="[doneList,reviewList]" class="item-list" (cdkDropListDropped)="drop($event)">
+          <div class="item-box" *ngFor="let item of todo" cdkDrag>{{item}}</div>
+        </div>
+
+        <div class="section-heading">Seccion 2</div>
+        <div cdkDropList #doneList="cdkDropList" [cdkDropListData]="done"
+          [cdkDropListConnectedTo]="[pendingList,reviewList]" class="item-list" (cdkDropListDropped)="drop($event)">
+          <div class="item-box" *ngFor="let item of done" cdkDrag>{{item}}</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- <div class="col-md-4">
+      <div class="drag-container">
+        <div class="section-heading">Seccion 2</div>
+        <div cdkDropList #doneList="cdkDropList" [cdkDropListData]="done"
+          [cdkDropListConnectedTo]="[pendingList,reviewList]" class="item-list" (cdkDropListDropped)="drop($event)">
+          <div class="item-box" *ngFor="let item of done" cdkDrag>{{item}}</div>
+        </div>
+      </div>
+    </div> -->
+
+    <div class="col-md-4">
+      <div class="drag-container">
+        <div class="section-heading">Seccion 3</div>
+        <div cdkDropList #reviewList="cdkDropList" [cdkDropListData]="review"
+          [cdkDropListConnectedTo]="[doneList,pendingList]" class="item-list" (cdkDropListDropped)="drop($event)">
+          <div class="item-box" *ngFor="let item of review" cdkDrag>{{item}}</div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</div>

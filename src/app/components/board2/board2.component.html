@@ -1,0 +1,15 @@
+<div class="tools">
+  <div class="itols" draggable="true" *ngFor="let item of tools">
+    <div *ngFor="let x of [].constructor(item.cols)" [ngStyle]="{'width':(100/item.cols)+'%'}">{{item.cols}}</div>
+  </div>
+</div>
+
+<div class="board" [class.dragging]="isDragActive"
+(dragstart)="onDragstart($event)"
+(dragover)="onDragOver($event)" 
+(dragenter)="onDragenter($event)" 
+(drop)="onDrop($event)"
+(dragend)="onDragend($event)"
+(dragleave)="onDragleave($event)">
+
+</div>
